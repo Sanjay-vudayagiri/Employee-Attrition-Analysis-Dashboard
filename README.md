@@ -1,150 +1,139 @@
 1. Project Title
 
-Employee Attrition Analysis Dashboard |  Power BI Project
+Health Claims and Insurance Intelligence Dashboard | Power BI Project
 
 2. Purpose
 
-This project presents an interactive Power BI dashboard designed to analyze employee attrition trends, workforce demographics, salary distribution, and job role impact.
+This project presents an interactive Power BI dashboard designed to analyze healthcare claims data, insurance payouts, provider performance, and member demographics.
 
-The dashboard helps HR teams and management understand attrition patterns, identify high-risk segments, and make data-driven workforce retention decisions.
+The dashboard enables healthcare administrators, insurance analysts, and finance teams to monitor claim trends, optimize costs, evaluate provider efficiency, and make data-driven strategic decisions.
 
 3. Tech Stack
 
 📊 Power BI
 🧮 DAX (Data Analysis Expressions)
 🔄 Power Query (ETL & Data Transformation)
-🗂️ Data Modeling
-📁 Employee Dataset (CSV/Excel)
+🗂️ Data Modeling (Star Schema)
+📁 Dataset used – Healthcare Claims Dataset (Dataset from Maven Analytics)
 
 4. Data Source
 
-HR Analytics dataset (Employee Attrition dataset commonly used for HR analysis projects).
+Healthcare Claims dataset used for insurance and claims analytics (Maven Analytics dataset).
 
 5. Features
 5.1 Business Problem
 
-Organizations face significant challenges in managing employee turnover. Common issues include:
+Healthcare organizations and insurance providers face challenges such as:
 
-Lack of visibility into attrition trends
+Limited visibility into claim cost distribution
 
-Inability to identify high-risk age groups or salary slabs
+Difficulty identifying high-cost age groups
 
-Poor understanding of department-wise attrition
+Poor tracking of insurance vs patient payment contribution
 
-Gender-based attrition imbalance
+Lack of provider performance benchmarking
 
-Limited insight into experience-related exits
+Limited insight into disease and treatment patterns
 
-This leads to increased hiring costs, productivity loss, and reduced workforce stability.
+These issues can lead to rising operational costs, inefficient reimbursements, and reduced financial control.
 
 5.2 Goal of the Dashboard
 
-Provide a centralized overview of employee metrics
+Provide a centralized view of healthcare claims metrics
 
-Monitor overall attrition rate
+Monitor total insurance payouts and patient contributions
 
-Identify attrition trends by age, salary, education, and job role
+Identify high-cost claim categories and demographics
 
-Analyze workforce demographics
+Analyze provider performance and claim volumes
 
-Enable HR teams to take proactive retention measures
+Track financial efficiency and reimbursement trends
+
+Enable data-driven healthcare decision-making
 
 5.3 Walkthrough of Key Visuals
 🔹 KPI Cards
 
 Displays:
 
-Total Employees (1400)
+Total Insurance Provided
 
-Total Attrition (227)
+Total Patient Payment
 
-Attrition Rate (16.2%)
+Average Insurance Payment
 
-Average Age (36)
+Average Patient Payment
 
-Average Salary (6.3K)
+Average Length of Stay
 
-Average Years at Company (6.9)
+Provides an executive snapshot of financial and operational performance.
 
-Provides an executive summary for quick decision-making.
+🔹 Claims by Claim Type (Bar/Column Chart)
 
-🔹 Attrition by Gender
+Visualizes distribution of claims across different claim categories.
+Helps identify dominant or high-cost treatment types.
 
-Bar visualization comparing male vs female attrition numbers.
-Helps analyze gender-based workforce stability.
+🔹 Insurance vs Patient Contribution (Stacked Column / Donut Chart)
 
-🔹 Attrition by Education (Donut Chart)
+Compares insurance-covered amounts vs patient-paid amounts.
+Helps understand dependency ratio and revenue mix.
 
-Shows distribution of attrition across education fields such as:
+🔹 Claims by Age Group
 
-Life Sciences
+Breakdown of claims across age segments.
+Identifies high-risk or high-utilization demographics.
 
-Medical
+🔹 Provider Performance Analysis
 
-Marketing
+Displays:
 
-Technical Degree
+Claims per provider
 
-Others
+Insurance amount by provider
 
-Identifies which educational backgrounds experience higher turnover.
+Average payment per claim
 
-🔹 Attrition by Age (Bar Chart)
+Helps benchmark provider efficiency and cost impact.
 
-Breaks attrition into age groups:
+🔹 Disease / Treatment Analysis
 
-18–25
+Shows claim distribution by disease type.
+Identifies dominant medical conditions driving claims.
 
-26–35
+🔹 Length of Stay Analysis (Line / Column Chart)
 
-36–45
+Analyzes average hospital stay duration.
+Helps evaluate operational efficiency and care intensity.
 
-46–55
+🔹 Drill-through: Provider Deep Dive
 
-Helps identify early-career vs mid-career attrition trends.
+Enables detailed analysis of:
 
-🔹 Attrition by Salary Slab
+Individual provider claim trends
 
-Analyzes attrition across income ranges:
+Payment breakdown
 
-Upto 5k
+Disease distribution
 
-5k–10k
-
-10k–15k
-
-15k+
-
-Useful for understanding whether compensation influences turnover.
-
-🔹 Attrition by Years at Company (Line Chart)
-
-Displays attrition trend based on tenure.
-Highlights whether employees are leaving early or after long service periods.
-
-🔹 Attrition by Job Role
-
-Compares attrition numbers across roles such as:
-
-Laboratory Technician
-
-Sales Executive
-
-Research Scientist
-
-Sales Representative
-
-Identifies high-risk job functions.
-
-🔹 Job Role Attrition Matrix
-
-A detailed breakdown of attrition counts across roles and age groups.
-Enables deeper workforce segmentation analysis.
+Average cost per claim
 
 5.4 Business Impact & Insights
 
-✔ Improved visibility into workforce stability
-✔ Early identification of high attrition age groups
-✔ Detection of low-salary driven attrition trends
-✔ Better hiring and retention strategy planning
-✔ Data-backed HR decision making
+✔ Improved visibility into healthcare claim patterns
+✔ Identification of high-cost age groups and claim types
+✔ Better understanding of insurance vs patient payment distribution
+✔ Provider performance benchmarking
+✔ Enhanced financial monitoring and cost optimization
+✔ Data-backed strategic healthcare planning
+
+6. Deployment
+
+Data cleaned and transformed in Power Query
+
+Star schema data model implemented
+
+DAX measures created for KPIs and analytics
+
+Dashboard published to Power BI Service
+
+Scheduled data refresh configured
